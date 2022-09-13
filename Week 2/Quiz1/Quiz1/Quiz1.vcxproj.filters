@@ -13,10 +13,30 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Week2">
+      <UniqueIdentifier>{5db2006d-4f89-4864-b00e-aac42bf71969}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Quiz1">
+      <UniqueIdentifier>{735c69b3-8e11-46ea-b1a0-e7009ff7a812}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Quiz1.cpp">
+      <Filter>Source Files\Quiz1</Filter>
+    </ClCompile>
+    <ClCompile Include="Week2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ClassTasks.cpp">
+      <Filter>Source Files\Week2</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Quiz1.h">
+      <Filter>Source Files\Quiz1</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassTasks.h">
+      <Filter>Source Files\Week2</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
