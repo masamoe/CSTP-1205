@@ -6,7 +6,8 @@
 int main()
 
 {
-	BasicConditionals();
+	Lab2for();
+	Lab2while();
 	Quiz1();
 	Quiz1_Doubles();
 }
