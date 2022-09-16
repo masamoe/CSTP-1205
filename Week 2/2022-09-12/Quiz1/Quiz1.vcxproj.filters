@@ -19,6 +19,9 @@
     <Filter Include="Source Files\Quiz1">
       <UniqueIdentifier>{735c69b3-8e11-46ea-b1a0-e7009ff7a812}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Quiz2">
+      <UniqueIdentifier>{c2d1b4f0-3227-415f-901b-2a38bddb677e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Quiz1.cpp">
@@ -30,6 +33,9 @@
     <ClCompile Include="ClassTasks.cpp">
       <Filter>Source Files\Week2</Filter>
     </ClCompile>
+    <ClCompile Include="Quiz2.cpp">
+      <Filter>Source Files\Quiz2</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Quiz1.h">
@@ -37,6 +43,9 @@
     </ClInclude>
     <ClInclude Include="ClassTasks.h">
       <Filter>Source Files\Week2</Filter>
+    </ClInclude>
+    <ClInclude Include="Quiz2.h">
+      <Filter>Source Files\Quiz2</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
