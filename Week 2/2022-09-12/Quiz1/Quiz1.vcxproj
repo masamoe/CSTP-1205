@@ -141,12 +141,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Quiz1.cpp" />
-    <ClCompile Include="ClassTasks.cpp" />
+    <ClCompile Include="Assignment2.cpp" />
     <ClCompile Include="Quiz2.cpp" />
+    <ClCompile Include="Assignment3.cpp" />
     <ClCompile Include="Week2.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="ClassTasks.h" />
+    <ClInclude Include="Assignment2.h" />
+    <ClInclude Include="Assignment3.h" />
     <ClInclude Include="Quiz2.h" />
     <ClInclude Include="Quiz1.h" />
   </ItemGroup>

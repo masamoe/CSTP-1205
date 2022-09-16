@@ -2,14 +2,24 @@
 #include <stdlib.h>
 #include "Quiz1.h"
 #include "Quiz2.h"
-#include "ClassTasks.h"
+#include "Assignment3.h"
+#include "Assignment2.h"
 
 int main()
-
 {
 //	Lab2for();
 //	Lab2while();
 //	Quiz1();
 //	Quiz1_Doubles();
-	Quiz2();
+//	Quiz2();
+
+	int x = 10;
+	int y = 20;
+	swap(&x, &y);
+
+	int arr[10] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+	Print(arr, 10);
+	initializeArray(arr, 10);
+	Print(arr, 10);
 }
+
