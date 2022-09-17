@@ -74,7 +74,19 @@ void Print(int* pi, int n)
 {
 	while (n-- > 0)
 	{
-		
-		cout << "Value at pi = " << *pi[n] << endl;
+		cout << "Value at pi = " << *pi << endl;
+		++pi;
 	}
+}
+
+int CalculateAverage(int* pi, int n)
+{
+	int total = 0;
+	for (int i = n; i > 0; i--)
+	{
+		total = total + *pi;
+		++pi;
+	}
+	double average = total / n;
+	return average;
 }

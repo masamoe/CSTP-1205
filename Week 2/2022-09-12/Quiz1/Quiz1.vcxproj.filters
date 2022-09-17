@@ -13,16 +13,16 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\Week2">
-      <UniqueIdentifier>{5db2006d-4f89-4864-b00e-aac42bf71969}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Quiz1">
       <UniqueIdentifier>{735c69b3-8e11-46ea-b1a0-e7009ff7a812}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files\Quiz2">
       <UniqueIdentifier>{c2d1b4f0-3227-415f-901b-2a38bddb677e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\2022-09-16">
+    <Filter Include="Source Files\Assignment2">
+      <UniqueIdentifier>{5db2006d-4f89-4864-b00e-aac42bf71969}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Assignment3">
       <UniqueIdentifier>{4a1079c7-4928-4886-8e25-9552938c19fb}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -34,13 +34,13 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Assignment2.cpp">
-      <Filter>Source Files\Week2</Filter>
+      <Filter>Source Files\Assignment2</Filter>
     </ClCompile>
     <ClCompile Include="Quiz2.cpp">
       <Filter>Source Files\Quiz2</Filter>
     </ClCompile>
     <ClCompile Include="Assignment3.cpp">
-      <Filter>Source Files\2022-09-16</Filter>
+      <Filter>Source Files\Assignment3</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -48,13 +48,13 @@
       <Filter>Source Files\Quiz1</Filter>
     </ClInclude>
     <ClInclude Include="Assignment2.h">
-      <Filter>Source Files\Week2</Filter>
+      <Filter>Source Files\Assignment2</Filter>
     </ClInclude>
     <ClInclude Include="Quiz2.h">
       <Filter>Source Files\Quiz2</Filter>
     </ClInclude>
     <ClInclude Include="Assignment3.h">
-      <Filter>Source Files\2022-09-16</Filter>
+      <Filter>Source Files\Assignment3</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
