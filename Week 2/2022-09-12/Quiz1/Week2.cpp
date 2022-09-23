@@ -3,6 +3,7 @@ using namespace std;
 #include <stdlib.h>
 #include "Quiz1.h"
 #include "Quiz2.h"
+#include "Quiz3.h"
 #include "Assignment2.h"
 #include "Assignment3.h"
 
@@ -22,6 +23,12 @@ int main()
 	Print(arr, 10);
 //	initializeArray(arr, 10);
 
-	cout << CalculateAverage(arr, 10);
+	cout << CalculateAverage(arr, 10)<<endl;
+
+	bool boolArr[] = { true, false, true, false, false };
+	bool myBool = true;
+	Quiz3(boolArr, sizeof(boolArr));
+	Quiz4(boolArr, sizeof(boolArr), myBool);
+	Quiz3(boolArr, sizeof(boolArr));
 }
 
