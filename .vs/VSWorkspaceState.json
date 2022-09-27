@@ -1,7 +1,15 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Week 1",
+    "\\Week 1\\HelloWorld",
+    "\\Week 1\\HelloWorld\\HelloWorld",
+    "\\Week 2",
+    "\\Week 2\\2022-09-12",
+    "\\Week 2\\2022-09-12\\Quiz1",
+    "\\Week 3",
+    "\\Week 3\\Quiz5"
   ],
-  "SelectedNode": "\\Week2.sln",
+  "SelectedNode": "\\Week 3\\Week3.cpp",
   "PreviewInSolutionExplorer": false
 }
