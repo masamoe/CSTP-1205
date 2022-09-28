@@ -1,6 +1,2 @@
-﻿  Assignment4.cpp
-C:\Users\000401934\OneDrive - Vancouver Community College\Documents\Intro C++\masamoe\Intro-C\Week 3\Assignment4.cpp(15,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\000401934\OneDrive - Vancouver Community College\Documents\Intro C++\masamoe\Intro-C\Week 3\Assignment4.cpp(21,2): error C2181: illegal else without matching if
-C:\Users\000401934\OneDrive - Vancouver Community College\Documents\Intro C++\masamoe\Intro-C\Week 3\Assignment4.cpp(22,21): warning C4018: '<': signed/unsigned mismatch
-  Week 3.cpp
-  Generating Code...
+﻿  Week 3.cpp
+  Week 3.vcxproj -> C:\Users\000401934\OneDrive - Vancouver Community College\Documents\Intro C++\masamoe\Intro-C\Week 3\Debug\Week 3.exe

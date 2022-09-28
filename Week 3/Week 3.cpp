@@ -7,6 +7,6 @@ using namespace std;
 int main() {
 
 	//Quiz5();
-	Assigment4a();
+	//Assigment4a();
 	Assigment4b();
 }
