@@ -33,21 +33,21 @@ void Assigment4a() {
 }
 
 void Assigment4b() {
-	char inputStr[150];
+	char inputStrB[150];
 	char lowerUpper;
 
 	cout << "Please type a string less than 150 characters long: \n";
-	cin.getline(inputStr, 150);
+	cin.getline(inputStrB, 150);
 	cout << "Type L for lowercase or U for uppercase:\n";
 	cin >> lowerUpper;
 
-	int n = strlen(inputStr);
+	int n = strlen(inputStrB);
 
 	if (lowerUpper == 'L') 
 	{
 		while (n-- > 0)
 		{
-			char* strPtr = &inputStr[n];
+			char* strPtr = &inputStrB[n];
 			if (isupper(*strPtr)) {
 				*strPtr = *strPtr + 32;
 			}
@@ -56,12 +56,12 @@ void Assigment4b() {
 	else {
 		while (n-- > 0) 
 		{
-			char* strPtr = &inputStr[n];
+			char* strPtr = &inputStrB[n];
 			if (islower(*strPtr)) {
 				*strPtr = *strPtr - 32;
 			}
 		}
 	};
 
-	cout << inputStr;
+	cout << inputStrB;
 }

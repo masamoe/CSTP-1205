@@ -1,2 +1,4 @@
-﻿  Week 3.cpp
+﻿  Assignment4.cpp
+C:\Users\000401934\OneDrive - Vancouver Community College\Documents\Intro C++\masamoe\Intro-C\Week 3\Assignment4.cpp(16,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\000401934\OneDrive - Vancouver Community College\Documents\Intro C++\masamoe\Intro-C\Week 3\Assignment4.cpp(24,21): warning C4018: '<': signed/unsigned mismatch
   Week 3.vcxproj -> C:\Users\000401934\OneDrive - Vancouver Community College\Documents\Intro C++\masamoe\Intro-C\Week 3\Debug\Week 3.exe
