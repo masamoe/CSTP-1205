@@ -4,12 +4,15 @@
 #include <stdlib.h>
 #include <iostream>
 #include "Exercise1.h"
+#include "GuessingGame.h"
 using namespace std;
 
 int main()
 {
 
-    exercise1();
+    //exercise1();
+
+    GuessingGame();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

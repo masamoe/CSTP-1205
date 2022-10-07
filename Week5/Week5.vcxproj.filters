@@ -16,6 +16,9 @@
     <Filter Include="Source Files\Exercise1">
       <UniqueIdentifier>{fdf18675-f446-4320-84f6-a489fa41cb7c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\GuessingGame">
+      <UniqueIdentifier>{297bd8b8-a59a-4170-8a5d-ff4171f23d28}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Week5.cpp">
@@ -24,10 +27,16 @@
     <ClCompile Include="Exercise1.cpp">
       <Filter>Source Files\Exercise1</Filter>
     </ClCompile>
+    <ClCompile Include="GuessingGame.cpp">
+      <Filter>Source Files\GuessingGame</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Exercise1.h">
       <Filter>Source Files\Exercise1</Filter>
+    </ClInclude>
+    <ClInclude Include="GuessingGame.h">
+      <Filter>Source Files\GuessingGame</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
