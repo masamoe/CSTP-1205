@@ -7,6 +7,8 @@ private:
 
 	//Function Members
 public:
+	Point();
+	Point(int x, int y);
 	int GetX();
 	int GetY();
 	void SetX(int x);

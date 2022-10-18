@@ -18,13 +18,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="2022-10-17.cpp">
+    <ClCompile Include="main-2022-10-17.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Point.cpp">
       <Filter>Source Files\ClassesAndObjects</Filter>
     </ClCompile>
     <ClCompile Include="Fraction.cpp">
+      <Filter>Source Files\ClassesAndObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="ExamineObjects.cpp">
       <Filter>Source Files\ClassesAndObjects</Filter>
     </ClCompile>
   </ItemGroup>

@@ -1,5 +1,13 @@
 #include "Point.h"
 
+Point::Point() {
+}
+
+Point::Point(int x, int y) {
+	SetX(x);
+	SetY(y);
+}
+
 int Point::GetX() {
 	return x;
 }
