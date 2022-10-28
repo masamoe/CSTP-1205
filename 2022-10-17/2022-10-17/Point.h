@@ -13,4 +13,5 @@ public:
 	int GetY();
 	void SetX(int x);
 	void SetY(int y);
+	void AddX(Point src);
 };
