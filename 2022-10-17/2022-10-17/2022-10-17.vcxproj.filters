@@ -16,6 +16,9 @@
     <Filter Include="Source Files\ClassesAndObjects">
       <UniqueIdentifier>{f2d8862e-8af6-44b6-9065-c7300c037fb5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Exercises">
+      <UniqueIdentifier>{c0124f34-050e-493d-8c28-cbf33e737f00}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main-2022-10-17.cpp">
@@ -30,12 +33,42 @@
     <ClCompile Include="ExamineObjects.cpp">
       <Filter>Source Files\ClassesAndObjects</Filter>
     </ClCompile>
+    <ClCompile Include="3DPoint.cpp">
+      <Filter>Source Files\ClassesAndObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Node.cpp">
+      <Filter>Source Files\ClassesAndObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Employee.cpp">
+      <Filter>Source Files\ClassesAndObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="PhoneNumber.cpp">
+      <Filter>Source Files\ClassesAndObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercise 2022-10-28.cpp">
+      <Filter>Source Files\Exercises</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Point.h">
       <Filter>Source Files\ClassesAndObjects</Filter>
     </ClInclude>
     <ClInclude Include="Fraction.h">
+      <Filter>Source Files\ClassesAndObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="3DPoint.h">
+      <Filter>Source Files\ClassesAndObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Employee.h">
+      <Filter>Source Files\ClassesAndObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Address.h">
+      <Filter>Source Files\ClassesAndObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="PhoneNumber.h">
+      <Filter>Source Files\ClassesAndObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
       <Filter>Source Files\ClassesAndObjects</Filter>
     </ClInclude>
   </ItemGroup>
