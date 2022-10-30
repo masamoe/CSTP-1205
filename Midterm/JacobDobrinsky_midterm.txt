@@ -1,7 +1,10 @@
 Jacob Dobrinsky
 
 MIDTERM - Sept 2022 - Intro to C++ Prog.
-
+// =======================================
+// Mark: 86/100
+// npd stands for "No Points are Deducted"
+// ======================================
 
 1 - What does this line of code do?
 std::cout << "Type your name" << std::endl;
@@ -26,71 +29,71 @@ C) !a == !b
 D) a <> b
 
 4 - What does this line of code do?
-    *p++ = 0;
-    
+    *p++ = 0;
+    
 A) Declares a pointer and sets the value to zero
 B) Assign zero to the pointer
 C) Assign 0 to the memory the pointer is pointing to and then increments the pointer
 D) Increments the pointer and sssign 0 to the memory the pointer is pointing to
 
 5 - We know employee salaries in a company may be calculated based on three different criteria.
-    Hourly rate, fixed monthly salary or project lumpsum.
-    A senior programmer wants you to creat an enumerated list to reflect these three options in the system.
-    Hint: use enum to define the three options
-    
+    Hourly rate, fixed monthly salary or project lumpsum.
+    A senior programmer wants you to creat an enumerated list to reflect these three options in the system.
+    Hint: use enum to define the three options
+    
 6 - What is the result returned from the following funcltion if the value passed is 23.
-    bool Func1(int num)
-    {
-        int temp = num % 2;
+    bool Func1(int num)
+    {
+        int temp = num % 2;
 
-        if (temp == 0)
-        {
-            return true;
-        }
-        
-        return false;
-    }
-    
+        if (temp == 0)
+        {
+            return true;
+        }
+        
+        return false;
+    }
+    
 7 - Write a function that receives a character pointer and determines if the character
-    the pointer is pointing to is a vowel or not.
-    Vowels are the letters "aeiou"
-    
+    the pointer is pointing to is a vowel or not.
+    Vowels are the letters "aeiou"
+    
 8 - The information needed to save an Employee in a system is
-    ID, first name, last name, year joined, address, position and department.
-    Write a class to encapsulate Employee information.
+    ID, first name, last name, year joined, address, position and department.
+    Write a class to encapsulate Employee information.
 
 9 - Write the copy constructor function for the following Point class.
-    
+    
 class Point
 {
-    // Data Members
+    // Data Members
 private:
-    int x;
-    int y;
+    int x;
+    int y;
 
-    // Function Members
+    // Function Members
 public:
-    Point();
-    Point(int x, int y);
-    Point(Point const &src);
+    Point();
+    Point(int x, int y);
+    Point(Point const &src);
 };
 
 10 - What does the following lines of code result in.
-    #include <iostream>
-    #include <fstream>
-    using namespace std;
-    void Func()
-    {
-        ofstream fout("systemf/text.txt");
-        fout << "i: start processing" << std::endl;
-        fout2.close();
-    }
+    #include <iostream>
+    #include <fstream>
+    using namespace std;
+    void Func()
+    {
+        ofstream fout("systemf/text.txt");
+        fout << "i: start processing" << std::endl;
+        fout2.close();
+    }
 
 A) It will not compile.
 B) Opens the file text.txt and adds the string "i: start processing" to the end of the file.
 C) Opens file text.txt and writes the string "i: start processing" to it
-    even if the file already exists. It essentially overwrites the file if it already exists.
-    And it will create the file and write the string if the file does not exist.
+    even if the file already exists. It essentially overwrites the file if it already exists.
+    And it will create the file and write the string if the file does not exist.
 D) Tries to open file text.txt and if it exists, throws an exception.
 Otherwise, writes the string "i: start processing" to it
 
@@ -99,17 +102,18 @@ List of Answers:
 1 - C
 2 - D
 3 - A
-4 - B
-5 - enum salaries {"Hourly Rate, "Fixed Monthly Salary", "Project Lumpsum"};
+4 - B 										// <<<<< correct answer is (C) (-10) >>>>>
+5 - enum salaries {"Hourly Rate, "Fixed Monthly Salary", "Project Lumpsum"};	// <<<<< you should use "enum class" (npd) >>>>>
 6 - False is returned
 7 - 
 bool isVowel(char* ptr)
 {
-	char* temp = &ptr;
+	char* temp = &ptr;			// <<<<< this should be char* temp = ptr; (npd) >>>>>
+								// <<<<< however, there is no need for creating temp (npd) >>>>>
 	char arr[] = {'a', 'e', 'i', 'o', 'u'};
-	for (i = 0; i < 5; i++)
+	for (i = 0; i < 5; i++)		// <<<<< (int i = 0; ... (npd) >>>>>
 	{
-		if (*temp == i)
+		if (*temp == i)			// <<<<< (*temp == arr[i]) (-2) >>>>>
 		{
 			return true;
 		}
@@ -133,20 +137,20 @@ class Employees
 9 - 
 class Point
 {
-    // Data Members
+    // Data Members
 private:
-    int x;
-    int y;
+    int x;
+    int y;
 
-    // Function Members
+    // Function Members
 public:
-    Point();
-    Point(int x, int y);
-    Point(Point const &src);
+    Point();
+    Point(int x, int y);
+    Point(Point const &src);
 	Point(const Point& p1)
     {
-        x = point.x;
-        y = point.y;
+        x = point.x;				// <<<<< p1.x (-2) >>>>>
+        y = point.y;				// <<<<< p1.y (npd) >>>>>
     };
 };
 
