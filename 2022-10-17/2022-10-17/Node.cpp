@@ -2,17 +2,17 @@
 
 Node::Node(int data)
 {
-	Data = data;
-	Next = nullptr;
+	data = data;
+	next = nullptr;
 }
 
-Node::Node(int data, Node* next)
+Node::Node(int data, Node *next)
 {
-	Data = data;
-	Next = next;
+	data = data;
+	next = next;
 }
 
-void Node::SetNext(Node* next)
+void Node::SetNext(Node *next)
 {
-	Next = next;
+	next = next;
 }

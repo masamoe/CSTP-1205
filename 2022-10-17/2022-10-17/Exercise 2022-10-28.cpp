@@ -3,7 +3,6 @@
 #include <list>
 #include "Node.h"
 
-
 using namespace std;
 
 void PrintList(list<int> myList)
@@ -16,11 +15,13 @@ void PrintList(list<int> myList)
     cout << endl;
 }
 
-void PrintNodeList(Node* node)
+void PrintNodeList(Node *node)
 {
-    while (node != nullptr)
+    Node *temp = node;
+    while (temp != NULL)
     {
-        cout << "n: " << node->n << endl;
-        node = node->next;
+        cout << temp->data << " ";
+        temp = temp->next;
     }
+    cout << endl;
 }

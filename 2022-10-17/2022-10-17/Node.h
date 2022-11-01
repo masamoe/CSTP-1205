@@ -5,11 +5,11 @@
 class Node
 {
 public:
-	int Data;
-	Node* Next;
+	int data;
+	Node *next;
 
 public:
 	Node(int data);
-	Node(int data, Node* next);
-	void SetNext(Node* next);
+	Node(int data, Node *next);
+	void SetNext(Node *next);
 };
