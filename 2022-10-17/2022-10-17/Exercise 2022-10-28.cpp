@@ -8,23 +8,19 @@ using namespace std;
 
 void PrintList(list<int> myList)
 {
-	
-	for (auto n : myList)
-	{
-		cout << "n: " << n << endl;
-	}
-
+    list<int>::iterator it;
+    for (it = myList.begin(); it != myList.end(); it++)
+    {
+        cout << *it << " ";
+    }
+    cout << endl;
 }
 
 void PrintNodeList(Node* node)
 {
-    if (node == NULL)
+    while (node != nullptr)
     {
-        cout << "NULL" << endl;
-    }
-    else
-    {
-        cout << node << endl;
-        node->Next;
+        cout << "n: " << node->n << endl;
+        node = node->next;
     }
 }
