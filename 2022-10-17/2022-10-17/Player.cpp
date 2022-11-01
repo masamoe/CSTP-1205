@@ -3,6 +3,8 @@
 Player::Player(const string &username, const string &name)
     : m_username(username), m_name(name) // initializers, same result as below
 {
+    // can type some code here, but not necessary.
+    // the initializer will execute first
 }
 
 // Player::Player(const string &username, const string &name)
