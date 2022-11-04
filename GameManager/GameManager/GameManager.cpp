@@ -1,5 +1,6 @@
 #include <iostream>
 #include "GameManager.h"
+#include "GuessingGame.h"
 
 using namespace std;
 

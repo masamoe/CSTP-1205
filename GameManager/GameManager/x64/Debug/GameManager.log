@@ -1,4 +1,4 @@
-﻿  main.cpp
-  Player.cpp
+﻿  GameManager.cpp
+  main.cpp
   Generating Code...
   GameManager.vcxproj -> C:\Users\Jake\Documents\GitHub\Intro-C\GameManager\x64\Debug\GameManager.exe
