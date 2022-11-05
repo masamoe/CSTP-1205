@@ -36,12 +36,12 @@ void Player::SetName(const string &name)
     this->m_name = name;
 }
 
-void Player::SetName(const string &name, const string &lastName)
-{
-    this->m_name = name;
-    this->m_name.append(" ");
-    this->m_name.append(lastName);
-}
+// void Player::SetName(const string &name, const string &lastName)
+// {
+//     this->m_name = name;
+//     this->m_name.append(" ");
+//     this->m_name.append(lastName);
+// }
 
 const Player &Player::operator=(const Player &player)
 {
