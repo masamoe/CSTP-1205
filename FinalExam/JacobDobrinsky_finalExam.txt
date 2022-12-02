@@ -1,0 +1,260 @@
+CSTP 1205 - C++ Programming -- Final Exam -- Dec 2, 2022
+========================================================
+Answer questions in plain text only an in one single file named as: 1205-Final-YourName-LastName.txt
+Submit your answers by sending the text file to george.bekari@gmail.com
+=======================================================================
+	
+1 - Write a function that receives a pointer to a character and determines if the character 
+	is a number. The function should be named IsNumber(..).
+	When the character passed to the function is a number the function returns true, otherwise returns false. 
+
+2 - Write a function that receives a pointer to a character and determines if the character 
+	is a letter. The function should be named IsLetter(..).
+	When the character passed to the function is a letter the function returns true, otherwise returns false. 
+
+3 - What is exception handling and what are its components?
+    Discuss the concept with the help of a code example.
+		
+4 - The information needed to save a User in a system is 
+	ID, first name, last name, email address, phone number, address, postal code and country.
+	Write a class to encapsulate User information.
+	Add a constructor that receives ID, Email address, first name and last name as parameters.
+	If the value of either one of those constructor parameters are null or empty, throw an excaption.
+	Further validate the email address by the following rules
+	- Assuming the email structure is username@domainname.extension
+	- Check that the email has all three sections: username, domainname and extension
+	- Check that the email has exactly one '@'
+    - Check that the email has exactly one '.'	
+	- If the email is not valid throw a specific exception 
+
+5 - An overloaded operator is a user defined function that operates on:
+A) data
+B) operators
+C) objects
+D) classes
+
+5 - Write an operator== for the User class to test equality of two users.
+    Use this signature for the function bool operator==(const User& user)
+	The definition of equality for a user object is that ID, 
+	Email address, first name and last name are equal. 
+
+6 - What is inheritance? Discuss the topic using a code example.
+
+7 - Explain virtual function and differentiate them from a pure virtual function using a code example.
+
+6 - Create classes for a game company that produces games which are platform exclusive and cross-play (online multiplayer).
+    For the sake of simplicity, assume the company builds games for only one platform (console).
+    All games have the following identical properties: 
+	GameID (int), Title (string), Genre (string), Release Year (int), Release Month (int), Version (float).
+	All above properties are required to create a valid game object.
+	
+	All games should have a function called IsCrossPlay: bool IsCrossPlay() 
+	This function should return true if the game is playable as cross-play, otherwise false.
+	
+	Cross-play games should have a function called IsFree: bool IsFree() 
+	This function should return true if the online game is free and false otherwise.
+
+	Note: only create the classes necessary for game itself using the properties provided.
+	Don't include any other classes or properties like User, Score, etc.   
+==========================================================================================
+
+
+1-
+IsNumber(char* pointChar){
+	if (pointChar >= '0' && pointChar <= '9' ){
+		return true;
+	}
+	else{
+		return false;
+	}
+};
+
+2-
+IsLetter(char* pointChar){
+	if (pointChar >= 'a' && pointChar <= 'z' || pointChar >= 'A' && pointChar <= 'Z'){
+		return true;
+	}
+	else{
+		return false;
+	}
+};
+
+3-
+Exception handling is a way to try a block of code and throw an exception if it doesn't work, this helps avoid breaking your code.
+Try block, catch handlers, and throw expression are components of exception handling.
+
+4-
+class User
+{
+private:
+    string id;
+    string firstName;
+    string lastName;
+    string email;
+    string phoneNumber;
+    string address;
+    string postalCode;
+    string country;
+
+public:
+    User(const string &id, const string &firstName, const string &lastName, const string &email);
+};
+
+void User::User(const string &id, const string &firstName, const string &lastName, const string &email);
+{
+	this->id = id;
+	this->firstName = firstName;
+	this->lastName = lastName;
+	this->email = email;
+
+	try {
+		if (id.length() <= 0) {
+			throw "Invalid ID";
+		}
+		if (firstName.length() <= 0) {
+			throw "Invalid First Name";
+		}
+		if (lastName.length() <= 0) {
+			throw "Invalid Last Name";
+		}
+		if (email.length() <= 0) {
+			throw "Invalid Email";
+		}
+		if (email[0] == '@') {
+			throw "Invalid Email";
+		}
+		if (email[email.length() - 1] == '@') {
+			throw "Invalid Email";
+		}
+		if (email[email.length() - 1] == '.') {
+			throw "Invalid Email";
+		}
+		if (email.find('@') == -1) {
+			throw "Invalid Email";
+		}
+		if (email.find('.') == -1) {
+			throw "Invalid Email";
+		}
+		if (email.find('@') > email.find('.')) {
+			throw "Invalid Email";
+		}
+		catch (const char* msg) {
+            cout << msg << endl;
+        }
+	}
+};
+
+
+5-
+D) classes
+
+6-
+bool User::operator==(const User& user)
+{
+	if (this->id == user.id && this->firstName == user.firstName && this->lastName == user.lastName && this->email == user.email) {
+		return true;
+	}
+	else {
+		return false;
+	}
+};
+
+7-
+The ability for a child class to use attributes and methods from a parent class.
+Parent class
+class Restaurant {
+  public:
+    string company;
+    void takeOrder() {
+      cout << "Welcome! What would you like to order? \n" ;
+    }
+};
+
+Child class
+class McDonalds: public Restaurant {
+  public:
+    string company = "McDonalds";
+};
+
+int main() {
+  McDonalds myFranchise;
+  myFranchise.takeOrder();
+};
+
+8-
+A virtual function is a function which can be inherited by a child from a parent and overridden.
+A pure virtual function is different in that, while it is still inherited, it must be defined in the child.
+Parent class
+class Restaurant {
+  public:
+    string company;
+//this is a regular virtual function
+    virtual void takeOrder() {
+       cout << "Welcome! What would you like to order? \n"	
+    };
+//this is a pure virtual function
+	virtual void menu();
+};
+
+Child class
+class McDonalds: public Restaurant {
+  public:
+    string company = "McDonalds";
+//here the output of the virtual function from the parent is overwritten
+	void takeOrder() {
+		cout << "Welcome to Mcdonald's! What would you like to order? \n"
+	};
+//here the pure virtual function from the parent is defined	
+	void menu(){
+		cout << "Burger\nFries\nSmoothie\n"
+	}
+};
+
+
+9-
+class GameCompany
+{
+    private:
+        int GameID;
+        string Title;
+        string Genre;
+        int ReleaseYear;
+        int ReleaseMonth;
+        float Version;
+    
+    public:
+        GameCompany(int GameID, string Title, string Genre, int ReleaseYear, int ReleaseMonth, float Version);
+        
+        bool IsCrossPlay();
+        bool IsFree();
+};
+
+GameCompany::GameCompany(int GameID, string Title, string Genre, int ReleaseYear, int ReleaseMonth, float Version)
+{
+    this->GameID = GameID;
+    this->Title = Title;
+    this->Genre = Genre;
+    this->ReleaseYear = ReleaseYear;
+    this->ReleaseMonth = ReleaseMonth;
+    this->Version = Version;
+}
+
+bool GameCompany::IsCrossPlay(){
+    if (this->Genre == "MMO"){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+bool GameCompany::IsFree(){
+    if (this->Genre == "MMO"){
+        return true;
+    }
+    else{
+        return false;
+    }
+};
+
+
